@@ -1,0 +1,25 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+	font-family: 'Fallout' , sans-serif;
+}
+
+.container {
+	max-width: 950px; /* созд контейнер с помощ кот все будет в рамках*/
+	margin: 0 auto;
+}
+
+body {
+	background-color: rgba(212, 207, 207, 1);
+	background-image:url(../img/Background.png);
+	margin: 0 auto;
+}
+
+@import 'block/welcome';
+@import 'block/nav';
+@import 'block/timer-box';
+@import 'block/timer';
+@import 'block/footer';
+
+@import 'base/media';

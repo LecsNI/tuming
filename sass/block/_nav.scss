@@ -1,0 +1,30 @@
+nav {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top:0;
+	background:rgb(156, 156, 156);
+	height: 55px;
+	.menu {	
+		display: flex;
+		justify-content: space-around;
+		padding: 7px 70px 0 0;
+		li {
+			list-style-type: none;
+			a {
+			text-decoration: none;
+			color: black;
+			font-size: 26px;
+			transition: 0.5s all;
+			&:hover {
+				color: rgb(106, 133, 98);
+				transition: 0.5s all;
+			}
+			}
+		}
+	}
+	.hamburger {
+		display: none;
+	}
+}

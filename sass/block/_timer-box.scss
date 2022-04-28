@@ -1,0 +1,63 @@
+.timer-box {
+	display: flex;
+	border-top: 100px solid transparent;
+	&__block {
+		width: 850px;
+		border: 3px dashed black;
+		padding: 20px;
+		transition: 1.5s all;
+		&:hover {
+			background-color: rgb(156, 156, 156);
+			transition: 1s all;
+		}
+	}
+
+	&__block_flex {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__descr {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__text {
+		display: inline-block;
+		width: 45%;
+	}
+	&__title {
+		text-align: center;
+		font-size: 35px;
+	}
+	&__subheader {
+		font-size: 25px;
+		text-align: center;
+	}
+	&__subtitle {
+		font-size: 25px;
+		text-align: center;
+	}
+	&__list {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.tik_tak__header {
+		text-align: center;
+		font-size: 30px;
+		margin-top: 20px;
+	}
+	
+	.tik-tak {
+		margin-top: 20px;
+	}
+	.timer-box__img {
+		display: inline-block;
+		width: 45%;
+	}
+
+	.img-size {
+		height: 300px;
+	}
+}

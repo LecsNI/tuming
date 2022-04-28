@@ -1,0 +1,261 @@
+@media (max-width: 1200px) { /*максимальная ширина 1200px ибо bootstrap контейнер ограничен шириной 1140px*/ 
+}
+
+@media (max-width: 991px) {/*Указывается не 992, а 991 px из-за того что колонки и расширение могут конфликтовать*/
+	nav {
+		.menu {
+			justify-content: space-evenly;
+			padding: 10px 30px 0 0;
+			li {
+				a {
+					font-size: 22px;
+				}
+			}
+		}
+	}
+
+	.welcome {
+		border-top: 80px solid transparent;
+		margin: 0 15px;
+		&__header {
+			font-size: 40px;
+		}
+		&__subheader {
+			font-size: 25px;
+		}
+	}
+	.timer-box {
+		border-top: 80px solid transparent;
+		&__block {
+			width: 700px;
+			margin: 0 auto;
+		}
+		&__title {
+			font-size: 25px;
+		}
+		&__subheader {
+			font-size: 20px;
+		}
+		&__subtitle {
+			font-size: 17px;
+		}
+		&__list {
+			font-size: 15px;
+			line-height: 25px;
+		}
+	}
+
+	.countdown-title {
+		font-size: 25px;
+	}
+
+	.footer {
+		&__title {
+			font-size: 30px;
+		}
+	}
+}
+
+
+@media (max-width: 767px) {/*Это уже мобильно-планшетное разрешение*/
+	nav {
+		.menu {/*подготовка обчного меню к бургер*/
+			position: fixed; /*чобы меню было зафиксировано даже после добав гамбургера*/
+			flex-direction: column;/*меню в колону*/
+			align-items: center; /*разместить по центру элементы*/
+			justify-content: center; /*разместить по центру элементы*/
+			top: 0px;
+			left: -100%; /*переместить меню слева чтобы оно не отобржалаось при неактивности*/
+			width: 50%; /*чтобы занимала половину ширрины контейнера*/
+			height: 100vh; /*чтобы занимала только 100vh видимого прост-ва на уств-ве, а это значит всё простраство экрана вообще*/
+			padding: 20px 15px;
+			background-color: rgba(156, 156, 156, .8 ); /*задник фон .8 альфа канал это 80% прозрачности*/
+			transition: 0.6s all; /*анимация для появления меню*/
+			&_active {/*класс активности, нужно чтобы при нажатии на гамбургер меню появилось*/
+				left: 0;
+			}
+			&__item {
+			padding-right: 0;
+			margin: 20px 0;
+			}
+			li {
+				a {
+					font-size: 30px;
+				}
+			}
+		}
+		.hamburger {
+			display: block; /*чтобы меню отображалось*/
+			position: absolute; /* меню было зафиксировано */
+			right: 10px; /*отступ сбоку*/
+			top: 50%; /* это для того чтобы завести под шапку меню */
+			transform: translateY(-50%);  /* это для того чтобы завести под шапку меню */
+			width: 30px;
+			height: 12px; /*12 при плюсовании высоты палок и отсутпов между палками*/
+			span {
+				display: block;
+				height: 3px; /*толщина палок*/
+				width: 100%; /*ширина палок в соотнош ширины всего бургера*/
+				background-color: black;
+				margin-bottom: 3px; /*отсп меж палками*/
+				transition: 0.5s all; /*active был более плавный, анимированый*/
+			}
+			&_active  { /*псевдокласс для анимации*/
+				span {/*анимация для палок*/
+					margin-bottom: -2px;/*убрать остп чтобы анимация была более плавной*/
+					&:first-child { /*первая палка*/
+						transform: translateY(3px) rotate(-45deg); /* translateY(3px) - смещение палок на 3 пикс / transform - анимация / rotate - вращение / -45deg  это - 45 градусов*/
+					}
+					&:nth-child(2) { /* вторая палка */
+						display: none; /*её скрываем*/
+					}
+					&:last-child {
+						transform:  translateY(3px) rotate(45deg);
+					}
+				}
+			}
+		}
+	}
+	.welcome {
+		border-top: 70px solid transparent;
+		&__header {
+			font-size: 30px;
+		}
+		&__subheader {
+			font-size: 18px;
+		}
+	}
+
+	.timer-box {
+		border-top: 60px solid transparent;
+		&__block {
+			width: 500px;
+			margin: 0 auto;
+		}
+		&__title {
+			font-size: 20px;
+		}
+		&__subheader {
+			font-size: 15px;
+		}
+		&__subtitle {
+			font-size: 13px;
+		}
+		&__list {
+			font-size: 12px;
+			line-height: 18px;
+		}
+		.img-size {
+			height: 200px;
+		}
+	}
+
+	.countdown-title {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.countdown  {
+		font-size: 14px;
+		.countdown-number {
+			padding: 5px;
+			margin: 0 3px;
+			.countdown-second {
+				padding: 10px;
+			}
+			.countdown-text {
+				font-size: 14px;
+			}
+		}
+	}
+	.countdown-two  {
+		font-size: 14px;
+		.countdown-number {
+			padding: 5px;
+			margin: 0 3px;
+			.countdown-second {
+				padding: 10px;
+			}
+			.countdown-text {
+				font-size: 14px;
+			}
+		}
+	}
+	.footer {
+		&__title {
+			font-size: 30px;
+		}
+	}
+	
+
+}
+@media (max-width: 575px) {/*Это уже мобильное разрешение*/
+	.container {
+		padding: 0;
+	}
+	nav {
+		.menu {
+		width: 85%; /*чтобы все было по центру*/
+			&_item {
+				width: 100%; /*шоб котейнер заним всю ширину*/
+				text-align: center;
+			}
+			li {
+				a {
+				display: block; /*чтобы ссылка занимала всю ширину*/
+				padding: 2px;
+				font-size: 25px;
+				}
+			}
+		}	
+	}
+ 	.welcome {
+		&__subheader {
+			font-size: 16px;
+		}
+	}
+
+	.timer-box {
+		&__descr {
+			flex-direction: column;
+		}
+		&__text {
+			width: 100%;
+		}
+		&__block {
+			width: 300px;
+			margin: 0 auto;
+		}
+		&__block_flex {
+			flex-direction: column;
+		}
+/* 		&__title {
+			font-size: 20px;
+		}
+		&__subheader {
+			font-size: 15px;
+		}
+		&__subtitle {
+			font-size: 13px;
+		}
+		&__list {
+			font-size: 12px;
+			line-height: 18px;
+		}*/
+		.timer-box__img {
+			margin-top: 5px;
+			width: 200px;
+		}
+		.img-size {
+			width: 200px;
+		}
+	}
+	.footer {
+		&__title {
+			padding: 10px 0 5px 0;
+			/* font-size: 15px; */
+		}
+	}
+
+
+}

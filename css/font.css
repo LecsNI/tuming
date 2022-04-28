@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fallout';
+    src: local('Fallout-regular'),
+        url('../fonts/Fallout-regular.ttf') format('ttf'),
+		url('../fonts/Fallout-regular.woff') format('woff'),
+		url('../fonts/Fallout-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

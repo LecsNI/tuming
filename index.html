@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Отсчёт начат!</title>
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<script src="https://kit.fontawesome.com/28966bcaf3.js" crossorigin="anonymous"></script><!-- Для работы иконочного шрифта -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="js/script.js">
+</head>
+<body>
+	<nav>
+		<div class="container">
+			<ul class="menu">
+				<li class="menu__item"><a href="#welcome">Главная</a></li>
+				<li class="menu__item"><a href="#classic">Классический счетчик</a></li>
+				<li class="menu__item"><a href="#plus">Счетчик плюс</a></li>
+				<li class="menu__item"><a href="#causes">Причины</a></li>
+				<li class="menu__item"><a href="#opportun">Возможности</a></li>
+			</ul>
+		</div>
+		<div class="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>	
+	</nav>
+	<container id="welcome" class="welcome">
+		<div class="container">
+		<h1 class="welcome__header">WELCOME!</h1>
+		<h2 class="welcome__subheader">Вы на странице счётчиков, где представленна информация и отчёты до больших изменений</h2>
+		</div>
+	</container>
+	<container id="classic" class="timer-box">
+		<div class="container">
+			<div class="timer-box__block">
+				<div class="timer-box__descr">
+					<div class="timer-box__text">
+						<h2 class="timer-box__title">Классический счетчик</h2>
+						<div class="timer-box__subheader">Это счетчик до конца вашего контракта! Вы можете увидеть сколько вам еще осталось пребывать безвылазно в убежище и нести ношу!</div>
+					</div>
+						<img src="../img/Vault-boy-infantiry.gif" class="timer-box__img" alt="Vault_boy__infantiry">
+				</div>
+				<div class="countdown-title">Времени осталось:</div>
+				<div id="countdown" class="countdown">
+					<div class="countdown-number">
+					  <span class="days countdown-time"></span>
+					  <span class="countdown-text">Дней</span>
+					</div>
+					<div class="countdown-number">
+					  <span class="hours countdown-time"></span>
+					  <span class="countdown-text">Часов</span>
+					</div>
+					<div class="countdown-number">
+					  <span class="minutes countdown-time"></span>
+					  <span class="countdown-text">Минут</span>
+					</div>
+					<div class="countdown-number">
+					  <span class="seconds countdown-time"></span>
+					  <span class="countdown-text">Секунд</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</container>
+	<container id="plus" class="timer-box">
+		<div class="container">
+			<div class="timer-box__block">
+				<div class="timer-box__descr">
+					<div class="timer-box__text">
+						<h2 class="timer-box__title">Cчетчик Плюс</h2>
+						<div class="timer-box__subheader">Это счетчик с учетом концовки контракта и времени более месяца! Это для того чтобы можно было понять когда можно выходить из убежища без вмешательства Смотрителя!</div>	
+					</div>
+					<img src="../img/vault-boy-walk.gif" class="timer-box__img" alt="vault-boy__walk">
+				</div>
+				<div class="countdown-title">Времени осталось:</div>
+				<div id="countdown-two" class="countdown-two">
+					<div class="countdown-number">
+					  <span class="days countdown-time"></span>
+					  <span class="countdown-text">Дней</span>
+					</div>
+					<div class="countdown-number">
+					  <span class="hours countdown-time"></span>
+					  <span class="countdown-text">Часов</span>
+					</div>
+					<div class="countdown-number">
+					  <span class="minutes countdown-time"></span>
+					  <span class="countdown-text">Минут</span>
+					</div>
+					<div class="countdown-number">
+					  <span class="seconds countdown-time"></span>
+					  <span class="countdown-text">Секунд</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</container>
+	<div id="causes" class="timer-box">
+		<div class="container">
+			<div class="timer-box__block timer-box__block_flex">
+				<div class="timer-box__text">
+					<h2 class="timer-box__title">Причины</h2>
+					<h3 class="timer-box__subtitle">Причины почему нужно за этим следить:</h3>
+					<div class="timer-box__list">
+						<i class="fa-solid fa-check fa-beat-fade fa-lg"></i>  Целая эпоха длинною в 3 года окончилась <br>
+						<i class="fa-solid fa-check fa-beat-fade fa-lg"></i>  Солько можно учиться и где нужно налеть за учебным процессом <br>
+						<i class="fa-solid fa-check fa-beat-fade fa-lg"></i>  Нет больше привязоности и можно искать другую работу по желанию <br>
+						<i class="fa-solid fa-check fa-beat-fade fa-lg"></i>  Психосоматические заболевания
+					</div>
+				</div>
+				<img src="../img/Vault-boy-drink.gif" class="timer-box__img img-size" alt="vault-boy__walk">
+			</div>
+		</div>
+	</div>
+	<div id="opportun" class="timer-box ">
+		<div class="container">
+			<div class="timer-box__block timer-box__block_flex">
+				<div class="timer-box__text">
+					<h2 class="timer-box__title">Возможности<i class="fal fa-exclamation fa-beat fa-lx"></i></h2>
+					<h3 class="timer-box__subtitle">Когда закрывается одна дверь, значит где-то открывается другая и не одна:</h3>
+					<div class="timer-box__list">
+						<i class="fal fa-exclamation fa-beat fa-lg"></i>  Просто быть свободным! Ощущение свободы окрыляет <br>
+						<i class="fal fa-exclamation fa-beat fa-lg"></i>  Можно отдохнуть и набраться сил <br>
+						<i class="fal fa-exclamation fa-beat fa-lg"></i>  Можно будет устроиться на работу мечты или на что-то получше
+					</div>
+				</div>
+				<img src="../img/Vault-boy-hacking.gif" class="timer-box__img img-size" alt="vault-boy__hack">
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__title">Work... <br> Work sometimes changes...</div>
+	</footer>
+	<script src="js/script.js"></script>
+</body>

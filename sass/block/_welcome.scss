@@ -1,0 +1,13 @@
+.welcome {
+	display: flex;
+	border-top: 100px solid transparent;
+	&__header {
+		font-size: 50px;
+		text-align: center;
+	}
+	&__subheader {
+		font-size: 35px;
+		text-align: center;
+
+	}
+}
